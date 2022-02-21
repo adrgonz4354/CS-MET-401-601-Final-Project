@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Final Project</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script id="home_page" type="text/html">
+	<center><h1><img src="star_spinning.gif" width="50" height="50" />Welcome to Wahoo!<img src="star_spinning.gif" width="50" height="50" /></h1></center>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			<hr/>
+			   <ul class="carousel-indicators">
+			    <li data-target="#demo" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo" data-slide-to="1"></li>
+			    <li data-target="#demo" data-slide-to="2"></li>
+			  </ul>
+
+			  <!-- The slideshow -->
+			  <div class="carousel-inner">
+			    <div class="carousel-item active" style='background:url("animation_slide_image.gif"); color:white; height:200px'>
+			    <center> 
+			    	<div class="card" style="width:350px; height:200px; background-color: rgba(108, 114, 244, 1); border: 0px; ">
+			    		<h2 class="notbold">Who are we?</h2>
+			    		<p>We are a furniture company that specializes in the selling of video game furniture and accessories. We ensure that
+			    		all of our products are of great quality and quantity.</p>
+			    	</div>
+
+			    </center>  
+
+			    </div>
+			    <div class="carousel-item" style='background:url("animation_slide_image.gif"); color:white; height:200px'>
+			    	<center>
+			      <div class="card" style="width:350px; height:200px; background-color: rgba(108, 114, 244, 1); border: 0px; ">
+			    		<h2 class="notbold">Why do we do it?</h2>
+			    		<p>It can be difficult searching for Mario Bros. Themed furniture and products, in addition to finding good products. Wahoo allows
+			    		you to do both with ease! </p>
+			    	</div>
+			    </center>
+			    </div>
+			    <div class="carousel-item" style='background:url("animation_slide_image.gif"); color:white; height:200px'>
+			    	<center>
+			      <div class="card" style="width:350px; height:200px; background-color: rgba(108, 114, 244, 1); border: 0px; ">
+			    		<h2 class="notbold">How can we help you?</h2>
+			    		<p> We help you by providing the tools necessary to find the Mario Bros. product you desire, such as our catalogue and search bar. If you require
+			    		customer support, please contact 123-456-7890 or customer.support@wahoo.com! :)</p>
+			    	</div>
+			    </center>
+			    </div>
+			  </div>
+
+
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a>
+		    </div>
+			<hr/>
+		    <center><h2 style="color:black;">Featured products</h2></center>
+		    <hr/>
+		    		<div class="row">
+							<div class="card" style="width:300px; height:400px; color:black;">
+							<center> <img src="store_items/accessories/bathroom/mario_maker_bathroom_set.jpg" class="product_image" /> </center>
+							<br/>
+
+							<label><h3  style="position:relative; top:10px;">Super Mario Maker Bathroom Set</h3></label>
+							<label><h8> Price : $259.99</h8></label>
+							<button type="button" class="btn btn-primary" style="width:200px; position:relative; left:50px;" 
+							onclick="load_product_page('store_items/accessories/bathroom/mario_maker_bathroom_set.jpg','259.99', 'Super Mario Maker Bathroom Set', '','045495860586');">View Product</button>
+							</div>
+
+							<div class="card" style="width:300px; height:400px; color:black;">
+							<center> <img src="store_items/accessories/bedroom/super_mario_block_lamp.jpg" class="product_image" /> </center>
+							<br/>
+
+							<label><h3  style="position:relative; top:10px;">Super Mario Question Block Lamp</h3></label>
+							<label><h8> Price : $90.05</h8></label>
+							<button type="button" class="btn btn-primary" style="width:200px; position:relative; left:50px;" 
+							onclick="load_product_page('store_items/accessories/bedroom/super_mario_block_lamp.jpg','90.05', 'Super Mario Question Block Lamp', '','567856781');">View Product</button>
+							</div>
+
+							<div class="card" style="width:300px; height:400px; color:black;">
+							<center> <img src="store_items/furniture/chairs/102389283928.jpg" class="product_image" /> </center>
+							<br/>
+
+							<label><h3  style="position:relative; top:10px;">Super Mario Bros. Themed Desktop Chair</h3></label>
+							<label><h8> Price : $85.99</h8></label>
+							<button type="button" class="btn btn-primary" style="width:200px; position:relative; left:50px;" 
+							onclick="load_product_page('store_items/furniture/chairs/102389283928.jpg','85.99', 'Super Mario Bros. Themed Desktop Chair', '','102389283928');">View Product</button>
+							</div>
+
+					</div>
+	</script>
+	<script id="payment_processing_page" type="text/html">
+				<h1>Processing payment</h1>
+				<hr/>
+				<div class="card">
+					<h2> Billing Information </h2>
+					<hr />
+					<div class="row" style="position:relative; left:20px;">
+						<div class="col-sm">
+						 First Name:*  <input type="text" class="form-control mr-sm-2" placeholder="First Name" style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+						 Last Name:*  <input type="text" class="form-control mr-sm-2" placeholder="Last Name" style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+							Email:* <input type="text" class="form-control mr-sm-2" placeholder="Email Address" style="position:relative; width:200px;"/>
+						</div>
+					</div>
+					
+					<div style="position:relative; left:20px;">Shipping Address:* <input type="text" class="form-control mr-sm-2" placeholder="Address Line 1 " style="position:relative; width:700px;"/></div>
+					<div style="position:relative; left:20px;">Shipping Address 2:* <input type="text" class="form-control mr-sm-2" placeholder="Address Line 2 " style="position:relative; width:700px;"/></div>
+					<div class="row" style="position:relative; left:20px;">
+
+						<div class="col-sm">
+							Country:* <input type="text" class="form-control mr-sm-2" placeholder="Country " style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+							City:* <input type="text" class="form-control mr-sm-2" placeholder="City " style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+							State/Province:* <input type="text" class="form-control mr-sm-2" placeholder="State/Province " style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+							Zip/Postal Code:* <input type="text" class="form-control mr-sm-2" placeholder="Zip/Postal Code " style="position:relative; width:150px;"/>
+						</div>
+
+					</div>
+
+					<hr/>
+
+				</div>
+
+				<div class="card">
+					<h2> Payment Information </h2>
+					<hr />
+					<div class="row" style="position:relative; left:20px;">
+						<div class="col-sm">
+						 Name on Card:*  <input type="text" class="form-control mr-sm-2" placeholder="Name on Card" style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+						 Zip/Postal Code:*  <input type="text" class="form-control mr-sm-2" placeholder="Zip/Postal Code" style="position:relative; width:200px;"/>
+						</div>
+					</div>
+					<div style="position:relative; left:20px;">Credit Card: <input type="text" class="form-control mr-sm-2" placeholder="Include dashes" style="position:relative; width:700px;"/></div>
+					<div class="row" style="position:relative; left:20px;">
+
+						<div class="col-sm">
+							Security Code(CVV):* <input type="text" class="form-control mr-sm-2" placeholder="Country " style="position:relative; width:200px;"/>
+						</div>
+						<div class="col-sm">
+							Expiration Date:* <input type="text" class="form-control mr-sm-2" placeholder="MM/YY" style="position:relative; width:100px;"/>
+						</div>
+
+					</div>
+					<hr/>
+				</div>
+
+				
+
+					
+					
+				</div>
+	</script>
+	<script type="text/javascript" src="products.js"></script>
+	<script type="text/javascript" src="load_products.js"></script>
+</head>
+<body>
+	<div class="container p-3 my-3 border" style="background-color:white; color:white; width:1000px;">
+		<nav class="navbar navbar-expand-sm fixed-top" style="background-color: rgb(79, 192, 214);">
+			<a class="navbar-brand"> 
+				<img src="logo.png" alt="Logo" style="height:40px; width:135px;" onclick="load_home_page();"/> 
+			</a>
+
+			<ul class="navbar-nav">
+
+				<li class="nav-item dropdown" >
+      			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+        		Furniture
+     			 </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" onClick="load_section('chairs');">Chairs</a>
+			        <a class="dropdown-item" onClick="load_section('couches');">Couches</a>
+			        <a class="dropdown-item" onClick="load_section('tables');">Tables</a>
+			      </div>
+			    </li>
+
+				<li class="nav-item dropdown" >
+      			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+        		Accessories
+     			 </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" onClick="load_section('bedroom');">Bedroom Accessories</a>
+			        <a class="dropdown-item" onClick="load_section('kitchen');">Kitchen Accessories</a>
+			        <a class="dropdown-item" onClick="load_section('bathroom');">Bathroom Accessories</a>
+			      </div>
+			    </li>
+				<button class="btn" type="submit" style="border: 1px solid white; border-radius:30px; position:relative; left: 576px;" onclick="load_cart();" >
+	   			    <img src="buttons/add_to_cart_button.png" style="width:20px; height:20px;"/>
+	   			</button>
+
+				<input class="form-control mr-sm-2" type="text" placeholder="Search" style="position:relative; left:585px;" id='search_text'>
+
+	   			<button class="btn" type="submit" id="search_button" style="border: 1px solid white; border-radius:30px; position:relative; left: 590px;" onClick="search_query();">
+	   			    <img src="buttons/search.png" style="width:15px; height:15px;"/>
+	   			</button>
+
+			</ul>
+		</nav>
+
+		<hr/>
+		<hr/>
+		<div id="product_page" style="color:black;">
+			
+			
+
+		</div>
+		
+		
+	</div>
+</body>
+</html> 
